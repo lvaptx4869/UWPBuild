@@ -3,17 +3,40 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UWPBuild"
+    xmlns:view ="using:UWPBuild.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <!--<Page.Resources>
+        <DataTemplate x:Key="MyViewModel">
+            <views:/>
+        </DataTemplate>
+    </Page.Resources>-->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="9*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="9*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-
-        <ContentControl Content="{Binding CurrentViewModel}" ContentTemplate="{Binding Path=CurrentTemplate}" Grid.RowSpan="1" />
-        <TextBlock Text="Server test and Nuget config" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
+        <Grid Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
+            <ComboBox Header="ECC Level" 
+              HorizontalAlignment="Stretch"
+              ItemsSource="{Binding Path=EccModes}" 
+              SelectedItem="{Binding SelectedEcc, Mode=TwoWay}" />
+            
+        </Grid>
+        <TextBox Grid.Row="1" Grid.Column="0" 
+         Text="{Binding SourceText, Mode=TwoWay}"
+         Header="Text" 
+         PlaceholderText="Enter Text" 
+         Margin="0,0,10,0" 
+         AcceptsReturn="True"
+         TextWrapping="Wrap"
+         MaxHeight="100"
+         MaxLength="768" />
+        <Image Source="{Binding Bitmap, Mode=TwoWay}" Grid.Row="2" />
+        <!--<ContentControl Content="{Binding CurrentViewModel}" ContentTemplate="{Binding Path=CurrentTemplate}" Grid.RowSpan="1" />-->
+        <TextBlock Text="Server test and Nuget config" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"></TextBlock>
     </Grid>
 </Page>

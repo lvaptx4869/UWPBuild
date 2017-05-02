@@ -3,15 +3,6 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -285,15 +276,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -1898,15 +1880,6 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2129,15 +2102,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -3659,15 +3623,6 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -3888,15 +3843,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -5377,15 +5323,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5614,15 +5551,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -7147,15 +7075,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -7376,15 +7295,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -8865,15 +8775,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -9102,15 +9003,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -10635,15 +10527,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "Edi.UWP.Helpers/1.0.11": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Edi.UWP.Helpers.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -10864,15 +10747,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "QRCoder/1.2.7": {
-        "type": "package",
-        "compile": {
-          "lib/uap10.0/QRCoder.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/QRCoder.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -12354,17 +12228,6 @@
     }
   },
   "libraries": {
-    "Edi.UWP.Helpers/1.0.11": {
-      "sha512": "2LtrgHo6C7jVMoyWeB3gnQ6RdFOlRZHPUrfCxsCdU8p4LfHpRlMOUGdLYx4WdXXZDYEeHi1kr2wyeg2Yklx1iQ==",
-      "type": "package",
-      "files": [
-        "Edi.UWP.Helpers.1.0.11.nupkg.sha512",
-        "Edi.UWP.Helpers.nuspec",
-        "lib/uap10.0/Edi.UWP.Helpers.dll",
-        "lib/uap10.0/Edi.UWP.Helpers.pri",
-        "lib/uap10.0/Edi.UWP.Helpers/Properties/Edi.UWP.Helpers.rd.xml"
-      ]
-    },
     "Microsoft.CSharp/4.0.0": {
       "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
       "type": "package",
@@ -12947,24 +12810,6 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
-      ]
-    },
-    "QRCoder/1.2.7": {
-      "sha512": "Rk8WM9JI0DCT2H+zLtN2XAeCeeJZV549ZQ5kYtTVvhBg81RQTqzc4XQzCudnejIPksTkjcvuXL1yLmk2oHx/Fg==",
-      "type": "package",
-      "files": [
-        "QRCoder.1.2.7.nupkg.sha512",
-        "QRCoder.nuspec",
-        "lib/monoandroid/QRCoder.dll",
-        "lib/monotouch/QRCoder.dll",
-        "lib/net35/QRCoder.dll",
-        "lib/net35/UnityEngine.dll",
-        "lib/net40/QRCoder.dll",
-        "lib/net40/UnityEngine.dll",
-        "lib/netstandard1.6/QRCoder.dll",
-        "lib/portable-net45+netcore45+wpa81+wp81+wp8+uap/QRCoder.dll",
-        "lib/uap10.0/QRCoder.dll",
-        "lib/xamarinios/QRCoder.dll"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -15652,9 +15497,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Edi.UWP.Helpers >= 1.0.11",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "QRCoder >= 1.2.7"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
     ],
     "UAP,Version=v10.0": []
   }
