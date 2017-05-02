@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using UWPBuild.Utils;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +26,48 @@ namespace UWPBuild
         public MainPage()
         {
             this.InitializeComponent();
+        }
+        public ViewModelBase currentViewModel = new ViewModelBase();
+
+        public ViewModelBase CurrentViewModel
+        {
+            get
+            {
+                return currentViewModel;
+            }
+            set
+            {
+                if (currentViewModel == value)
+                {
+                    return;
+
+                }
+                currentViewModel = value;
+                RaisePropertyChanged(() => CurrentViewModel);
+                RaisePropertyChanged(() => CurrentTemplate);
+            }
+        }
+
+        public DataTemplate CurrentTemplate
+        {
+            get
+            {
+                if (CurrentViewModel == null)
+                {
+                    return null;
+                }
+
+                return Utility.DataTemplateSelector.GetTemplate(CurrentViewModel);
+            }
+        }
+
+        public static class DataTemplateSelector
+        {
+            public static DataTemplate GetTemplate(ViewModelBase param)
+            {
+                Type t = param.GetType();
+                return App.Current.Resources[t.Name] as DataTemplate;
+            }
         }
     }
 }

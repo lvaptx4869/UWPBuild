@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Server test and Nuget config" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Content="{Binding CurrentViewModel}" ContentTemplate="{Binding Path=CurrentTemplate}" Grid.RowSpan="1" />
+        <TextBlock Text="Server test and Nuget config" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
     </Grid>
 </Page>
