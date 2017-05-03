@@ -1,0 +1,1 @@
+D:\MVVMProject\UWPBuild\UWPBuild\UWPBuild.csproj;x86

@@ -18,6 +18,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
             <ComboBox Header="ECC Level" 
@@ -38,5 +39,15 @@
         <Image Source="{Binding Bitmap, Mode=TwoWay}" Grid.Row="2" />
         <!--<ContentControl Content="{Binding CurrentViewModel}" ContentTemplate="{Binding Path=CurrentTemplate}" Grid.RowSpan="1" />-->
         <TextBlock Text="Server test and Nuget config" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"></TextBlock>
+        <ListView Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
+              ItemTemplateSelector="{StaticResource MessageItemDataTemplateSelector}"
+              ItemsSource="{Binding MessageList}" Grid.Row="4">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                    <Setter Property="Margin" Value="10"></Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
     </Grid>
 </Page>

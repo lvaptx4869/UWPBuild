@@ -27,6 +27,7 @@ namespace UWPBuild
         public MainPage()
         {
             this.InitializeComponent();
+            this.DataContext = new ChatWindowViewModel();
         }
         //public ViewModelBase currentViewModel = new ViewModelBase();
 
