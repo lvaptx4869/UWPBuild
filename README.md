@@ -10,3 +10,5 @@ TODO list
     script for build the Appx
 5.0 adaptive code for desktop and mobile
     switch the layout based on the height and width
+    
+    http://www.cnblogs.com/dino623/p/TemplatedControl.html
