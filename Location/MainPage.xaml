@@ -3,11 +3,58 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Location"
+    xmlns:control ="using:Location.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <Page.BottomAppBar>
+        <!--Style="{StaticResource DefaultCommandBarStyle}"-->
+        <CommandBar >
+            <AppBarButton Icon="Mail" Label="发送反馈"
+            Command="{Binding CommandReportError}" />
+        </CommandBar>
+    </Page.BottomAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <Grid Background="SteelBlue" Grid.Row="0" Height="32">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" x:Name="GridTitleBar" Background="Transparent">
+                <TextBlock Text="A quick brown fox jumped over the lazy doge." VerticalAlignment="Center" FontSize="12" FontFamily="Segoe UI" FontWeight="Normal" Margin="10,0" Foreground="White"/>
+            </Grid>
+            <TextBox Grid.Column="1" x:Name="TxtSearchBox" Width="180" BorderThickness="1" BorderBrush="LightGray" PlaceholderText="Quick Launch (Ctrl+Q)" MinHeight="20" Height="27" FontSize="12" Margin="0,0,140,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" VerticalAlignment="Center" Source="Assets/MSFT.jpg" Height="256" Grid.ColumnSpan="1" Margin="4" />
+            <control:DataPanel Grid.Column="1" ></control:DataPanel>
+            <TextBlock Grid.Column="1" x:Name="TxtMessage" TextWrapping="Wrap"  Grid.RowSpan="2" />
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+                <Button Content="OpenPDF"  Click="Button_Click_PDF"></Button>
+                    <Button  Content="Save Image"  HorizontalAlignment="Right" ClickMode="Press" Click="Button_Click" />
+            </StackPanel>
+
+            <Button Content="About" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right"></Button>
+        </Grid>
+        <control:HorizonalGridView Grid.Row="2"/>
     </Grid>
+
+
+
 </Page>
